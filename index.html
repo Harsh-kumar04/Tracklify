@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/suitcase-solid.svg" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracklify</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <h1><i class="fa-solid fa-suitcase" style="color: #4405ff"></i></h1>
+        <h1>Tracklify</h1>
+      </div>
+
+      <button class="toggle-dark">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+    </header>
+
+    <div class="top-bar">
+      <input
+        type="text"
+        class="search-bar"
+        placeholder=" Search company or role..."
+      />
+      <button class="add-btn">+ Add Job</button>
+    </div>
+
+    <div class="job-list"></div>
+
+    <div class="form">
+      <div class="modal" id="addJobModal">
+        <form id="jobForm">
+          <div class="head">
+            <h2>Add New Job</h2>
+            <button class="close" type="button">
+              <i class="fa-solid fa-circle-xmark" style="color: #454545"></i>
+            </button>
+          </div>
+
+          <label>Company</label>
+          <input id="company" placeholder="" />
+
+          <label>Role</label>
+          <input id="role" />
+
+          <label>Status</label>
+          <select id="status">
+            <option value="applied">Applied</option>
+            <option value="interview">Interview</option>
+            <option value="rejected">Rejected</option>
+          </select>
+
+          <label>Date</label>
+          <input id="date" type="date" placeholder="Deadline" />
+
+          <label>Notes...</label>
+          <textarea id="notes" placeholder=""></textarea>
+
+          <div class="down">
+            <button id="cancel" type="button">Cancel</button>
+            <button id="add" type="button">Add job</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">Crafted by <a href="https://harshkumar412.vercel.app/" target="_blank">Harsh Kumar</a></p>
+        <p class="footer-credits">Tracklify - 2025. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+  <script src="script.js"></script>
+</html>
